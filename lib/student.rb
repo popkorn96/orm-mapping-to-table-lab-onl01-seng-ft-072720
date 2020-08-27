@@ -1,4 +1,5 @@
 class Student
+<<<<<<< HEAD
 attr_accessor :name, :grade
 attr_reader :id
 def initialize(name, grade, id=nil)
@@ -36,3 +37,15 @@ def self.create( name:, grade:)
   student
 end
 end
+=======
+  attr_accessor :name, :grade
+  attr_reader :id 
+  def initialize (name, grade, id=nil)
+    @name = name
+    @grade = grade
+    @id = id 
+  end
+  def self.create_table
+    sql = <<-SQL 
+    CREATE TABLE IF NOT EXISTS 
+>>>>>>> 4c1ae06de32a200f9c0cfef72da31a72ffb95b58
